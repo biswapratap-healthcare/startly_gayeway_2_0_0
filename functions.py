@@ -1,3 +1,4 @@
+import base64
 import json
 import pickle
 
@@ -10,7 +11,6 @@ sqldb = SqlDatabase()
 
 
 def is_image_selected(image_arr, style):
-    numpy_arr = pickle.loads(image_arr)
     r = requests.post(sqldb.config['filter_host'] + ':' +
                       sqldb.config['filter_port'] + '/filter_image?' +
                       'style=' + style +
@@ -30,7 +30,8 @@ def search_image_fn(search_string, style):
             try:
                 res = future.result()
                 if res == "1":
-                    result.append(image_arr)
+                    numpy_arr = pickle.loads(image_arr)
+                    result.append(base64.b64encode(numpy_arr).decode("utf-8"))
             except Exception as exc:
                 print(exc)
     return result
