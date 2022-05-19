@@ -1,6 +1,7 @@
 import base64
 import json
 import pickle
+import numpy
 
 from sql import SqlDatabase
 import concurrent.futures
