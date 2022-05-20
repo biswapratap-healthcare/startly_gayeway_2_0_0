@@ -1,5 +1,5 @@
 {
-    "filter_host": "http://a07588430af2e480f8b03d43a5e9c4e5-1713502582.ap-south-1.elb.amazonaws.com",
+    "filter_host": "http://3.110.156.31",
     "filter_port": "8000",
     "db_host": "image-database.cuph4zrmc7ss.ap-south-1.rds.amazonaws.com",
     "dbname": "image_database",

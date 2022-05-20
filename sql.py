@@ -21,6 +21,8 @@ class SqlDatabase:
         with open(path, 'r') as f:
             credentials = json.load(f)
         self.config = {
+            "filter_host": credentials["filter_host"],
+            "filter_port": credentials["filter_port"],
             "db_host": credentials["db_host"],
             "dbname": credentials["dbname"],
             "user": credentials["user"],
