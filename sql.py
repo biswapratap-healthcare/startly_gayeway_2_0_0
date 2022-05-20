@@ -24,7 +24,8 @@ class SqlDatabase:
             "db_host": credentials["db_host"],
             "dbname": credentials["dbname"],
             "user": credentials["user"],
-            "password": credentials["password"]
+            "password": credentials["password"],
+            "unsplash_access_key": credentials["unsplash_access_key"]
         }
         self.connect()
 

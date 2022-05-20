@@ -4,5 +4,6 @@
     "db_host": "image-database.cuph4zrmc7ss.ap-south-1.rds.amazonaws.com",
     "dbname": "image_database",
     "user": "postgres",
-    "password": "geetashree"
+    "password": "geetashree",
+    "unsplash_access_key": "WGbhFDWhRv2SIa_dKXGq2HZo4-WPztJzdtku1lxgZ4Y"
 }
